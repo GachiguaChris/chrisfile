@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbox - Social Media Manager</title>
+  <link rel="stylesheet" href="styles/inbox.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Social Media Manager</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="accounts.html">Accounts</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="inbox.html">Inbox</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="inbox">
+      <h2>Social Inbox</h2>
+
+      <!-- Search and Filter Section -->
+      <div class="search-filter">
+        <input type="text" id="search-messages" placeholder="Search messages...">
+        <div class="filter-buttons">
+          <button id="filter-all">Show All</button>
+          <button id="filter-unread">Show Unread</button>
+        </div>
+      </div>
+
+      <!-- Message List -->
+      <div class="messages">
+        <div class="message unread" id="message1">
+          <div class="message-header">
+            <div class="profile-pic">
+              <img src="C:\Users\Admin\Desktop\chrisfile\image\kdb.jpg" alt="John Doe">
+            </div>
+            <div class="message-info">
+              <p><strong>James Mwangi</strong></p>
+              <p class="timestamp">Just Now</p>
+            </div>
+          </div>
+          <p><strong>John Doe:</strong> Great post! Keep it up.</p>
+          <button class="reply-btn" data-message-id="message1">Reply</button>
+          <button class="flag-btn" data-message-id="message1">Flag</button>
+        </div>
+
+        <div class="message" id="message2">
+          <div class="message-header">
+            <div class="profile-pic">
+              <img src="C:\Users\Admin\Desktop\chrisfile\image\bm.jpg" alt="Jane Smith">
+            </div>
+            <div class="message-info">
+              <p><strong>Brendah Mithika</strong></p>
+              <p class="timestamp">5 minutes ago</p>
+            </div>
+          </div>
+          <p><strong>Jane Smith:</strong> Can you share more details?</p>
+          <button class="reply-btn" data-message-id="message2">Reply</button>
+          <button class="flag-btn" data-message-id="message2">Flag</button>
+        </div>
+      </div>
+
+      <!-- Reply Form -->
+      <div class="reply-form">
+        <textarea id="reply-text" placeholder="Write your reply..."></textarea>
+        <button id="send-reply">Send Reply</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Social Media Manager</p>
+  </footer>
+
+  <script src="scripts/inbox.js"></script>
+</body>
+</html>

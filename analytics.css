@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #006F9E; /* Blue Flame Color */
+    color: white;
+    padding: 15px 0; /* Reduced padding for a more compact header */
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Slightly smaller header text */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Slightly smaller font for links */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main section */
+  .analytics {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Styling for chart containers */
+  .chart {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .chart canvas {
+    width: 100% !important;
+    height: 400px !important;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #006F9E; /* Blue Flame Color */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding for a more compact footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  

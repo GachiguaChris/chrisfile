@@ -1,0 +1,248 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #006a8e, #f39c12);
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #005f87; /* Deep blue */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f1c40f; /* Gold */
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Schedule Section */
+  .schedule {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    margin: 2rem auto;
+    border: 1px solid #e0e0e0;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .schedule h2 {
+    font-size: 2.5rem;
+    color: #006a8e;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  textarea, input[type="datetime-local"], select, input[type="file"], input[type="text"] {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid #006a8e;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #e7f3ff;
+    transition: all 0.3s ease;
+  }
+  
+  textarea:focus, input[type="datetime-local"]:focus, select:focus, input[type="file"]:focus, input[type="text"]:focus {
+    border-color: #f39c12;
+    background-color: #fff8e1;
+    outline: none;
+  }
+  
+  /* Improved Submit Button */
+  button.submit-button {
+    background-color: #006a8e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem; /* Increased padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width:auto;
+    max-width: 250px;
+ 
+}
+  
+  button.submit-button:hover {
+    background-color: #f39c12;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Advantages Section */
+  .advantages {
+    background-color: #fff8e1; /* Kept pinkish background */
+    padding: 3rem 10%;
+    text-align: center;
+    margin-top: 3rem;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .advantages h2 {
+    font-size: 2.5rem;
+    color: #006a8e;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .advantage-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .advantage-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .advantage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #fff8e1; /* Kept pinkish background */
+    padding: 3rem 10%;
+    text-align: center;
+    margin-top: 3rem;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    color: #006a8e;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .testimonial-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    position: relative;
+  }
+  
+  .testimonial-card img.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #006a8e;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .testimonial-card p {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .testimonial-card strong {
+    color: #006a8e;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  
+    .testimonial-card img.profile-img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and general layout styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /* White background */
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #3c8dbc; /* Softer blue */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f39c12; /* Orange hover color */
+  }
+  
+  /* Main section */
+  main {
+    padding: 2rem 10%;
+  }
+  
+  .accounts {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .accounts h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #3c8dbc; /* Softer blue for heading */
+  }
+  
+  .account-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .account-card {
+    background-color: #f8f9fa; /* Light gray background for cards */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .account-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+  }
+  
+  .account-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .account-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #3c8dbc; /* Softer blue for account names */
+  }
+  
+  .account-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .account-card button {
+    background-color: #3c8dbc; /* Softer blue background for buttons */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .account-card button:hover {
+    background-color: #2a6d9f; /* Darker blue on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #3c8dbc; /* Softer blue background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .account-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

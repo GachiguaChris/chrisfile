@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Posts - Social Media Manager</title>
+  <link rel="stylesheet" href="styles/schedule.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Manager</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="inbox.html">Inbox</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Schedule Section -->
+    <section class="schedule">
+      <h2>Schedule Posts</h2>
+      <form id="schedule-form">
+        <label for="post-content">Post Content:</label>
+        <textarea id="post-content" name="post-content" rows="5" required></textarea>
+
+        <label for="post-date">Schedule Date & Time:</label>
+        <input type="datetime-local" id="post-date" name="post-date" required>
+
+        <label for="platform">Select Platform:</label>
+        <select id="platform" name="platform" required>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter</option>
+          <option value="instagram">Instagram</option>
+        </select>
+
+        <label for="upload-file">Upload Media (Image/Video):</label>
+        <input type="file" id="upload-file" name="upload-file" accept="image/*,video/*">
+
+        <button type="submit">Schedule Post</button>
+      </form>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+      <h2>Why Schedule Posts?</h2>
+      <div class="advantage-card-container">
+        <div class="advantage-card">
+          <h3>Save Time</h3>
+          <p>Scheduling posts in advance allows you to free up time for other tasks.</p>
+        </div>
+        <div class="advantage-card">
+          <h3>Consistent Content</h3>
+          <p>Ensure consistent posting with a scheduled posting strategy.</p>
+        </div>
+        <div class="advantage-card">
+          <h3>Better Reach</h3>
+          <p>Schedule posts at peak times for maximum engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial-cards-container">
+        <div class="testimonial-card">
+          <img class="profile-img" src="C:\Users\Admin\Desktop\chrisfile\image\boy.jpg" alt="User 1">
+          <p>"This tool has helped me streamline my social media workflow!"</p>
+          <strong>- Samuel Mwenja, Content creator</strong>
+        </div>
+        <div class="testimonial-card">
+          <img class="profile-img" src="C:\Users\Admin\Desktop\chrisfile\image\n.jpg" alt="User 2">
+          <p>"Scheduling posts has never been easier, and it's saving me so much time!"</p>
+          <strong>- Mercy Wambui, Social Media Manager</strong>
+        </div>
+        <div class="testimonial-card">
+          <img class="profile-img" src="C:\Users\Admin\Desktop\chrisfile\image\z.jpg" alt="User 3">
+          <p>"I love how easy it is to manage multiple platforms in one place!"</p>
+          <strong>- Brian Kimani, Digital Marketer </strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics - Social Media Manager</title>
+  <link rel="stylesheet" href="styles/analytics.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Manager</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="inbox.html">Inbox</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="analytics">
+      <h2>Analytics Overview</h2>
+
+      <!-- Views vs Expected Views -->
+      <div class="chart">
+        <h3>Views vs Expected Views</h3>
+        <canvas id="viewsChart"></canvas>
+      </div>
+
+      <!-- Responses Analysis -->
+      <div class="chart">
+        <h3>Responses Analysis</h3>
+        <canvas id="responsesChart"></canvas>
+      </div>
+
+      <!-- Subscribers/Followers -->
+      <div class="chart">
+        <h3>Subscribers/Followers Growth</h3>
+        <canvas id="followersChart"></canvas>
+      </div>
+
+      <!-- Revenue Generated -->
+      <div class="chart">
+        <h3>Revenue Generated</h3>
+        <canvas id="revenueChart"></canvas>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Social Media Manager</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/charts.js"></script>
+</body>
+</html>

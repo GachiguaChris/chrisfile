@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #005C8A; /* Blue Flame */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Inbox Section */
+  .inbox {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Search and Filter */
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #filter-all, #filter-unread {
+    background-color: #007BFF;
+  }
+  
+  #send-reply {
+    background-color: #28a745;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Messages */
+  .message {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+  }
+  
+  .unread {
+    background-color: #fff5d6;
+  }
+  
+  /* Message Header */
+  .message-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 2px solid #005C8A; /* Soft Lining Around Profile Pic */
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Reply and Flag Buttons */
+  .reply-btn, .flag-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 6px 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .flag-btn {
+    background-color: #dc3545;
+  }
+  
+  .reply-btn:hover, .flag-btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Reply Form */
+  .reply-form {
+    margin-top: 20px;
+  }
+  
+  .reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .reply-form button {
+    width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #005C8A; /* Blue Flame */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+  
